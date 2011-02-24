@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  notify_id: MyString
+  total_fee: 1.5
+  trade_status: MyString
+  trade_no: MyString
+  notify_time: 2011-01-23 21:34:33
+  raw_post: MyText
+
+two:
+  notify_id: MyString
+  total_fee: 1.5
+  trade_status: MyString
+  trade_no: MyString
+  notify_time: 2011-01-23 21:34:33
+  raw_post: MyText
