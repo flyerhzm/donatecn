@@ -1,11 +1,9 @@
 Donatecn::Application.routes.draw do
   get "transactions/notify"
-
   get "transactions/done"
 
-  get "transactions/show"
-
-  root :to => "home#index"
+  resources :donates
+  root :to => "donates#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
