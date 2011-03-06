@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110123133433) do
+ActiveRecord::Schema.define(:version => 20110306145518) do
 
   create_table "transactions", :force => true do |t|
     t.string   "notify_id"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20110123133433) do
     t.text     "raw_post"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "buyer_email"
   end
 
 end

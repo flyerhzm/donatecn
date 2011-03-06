@@ -1,6 +1,18 @@
-%h1 捐款
+%h2 捐助
 
 - form_for @donate do |f|
   = f.label :amount, '金额: '
+  ¥
   = f.text_field :amount
-  = f.submit '捐款'
+  = f.submit '捐助'
+
+%h2 捐助记录
+%table.transactions
+  %th 捐助人
+  %th 捐助金额
+  %th 捐助时间
+  - @transactions.each do |transaction|
+    %tr.transaction{:class => cycle("even", "odd")}
+      %td.buyer_email= transaction.buyer_email.sub('%40', ' at ').gsub(/\./, ' dot ')
+      %td.total_fee= number_to_currency(transaction.total_fee, :unit => '¥')
+      %td.donate_time= distance_of_time_in_words_to_now(transaction.notify_time)
