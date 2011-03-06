@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #111;
+  background: #e5e5e5;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 12px;
+  margin: 0;
+}
+
+#container {
+  min-width: 960px;
+}
+#header {
+  background: #002134;
+}
+#header h1 {
+  padding: 15px 0;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: none;
+  letter-spacing: -1px;
+  line-height: 1.2em;
+  color: white;
+  text-shadow: black 1px 1px 2px;
+}
+#header, #wrapper {
+  padding: 0 20px;
+}
+#wrapper {
+  padding-top: 20px;
+}
+#flash {
+  margin: 0 0 20px 0;
+}
+#flash .message {
+  padding: 10px;
+}
+#flash .notice {
+  background-color: #fff6bf;
+  border: 2px solid #ffd324;
+  color: #514721;
+}
+#flash .error {
+  background-color: #fbe3e4;
+  border: 2px solid #fbc2c4;
+  color: #8a1f11;
+}
+#main {
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  border-top-left-radius: 9px 9px;
+  border-top-right-radius: 9px 9px;
+  border-bottom-right-radius: 9px 9px;
+  border-bottom-left-radius: 9px 9px;
+
+  padding: 15px;
+  background: white;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+#main h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: none;
+  letter-spacing: -1px;
+  line-height: 1.2em;
+}
+#main form label {
+  color: #666;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-right: 10px;
+  padding: 1px 0;
+}
+#main form {
+  margin-bottom: 50px;
+}
+#main form input[type=text] {
+  border: 1px solid #E2E2E2;
+  width: 50px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+table th {
+  background: #EAEAEA;
+  color: #222;
+  font-weight: normal;
+  padding: 10px;
+  text-align: left;
+}
+table tr.even {
+  background: #F8F8F8;
+}
+table td {
+  border-bottom: 1px solid #EAEAEA;
+  padding: 10px;
+}
+
+form#payment-form {
+  margin: 0;
+}
+
+p.info {
+  margin: 20px 0;
+  font-size: 1.2em;
+}

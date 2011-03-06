@@ -1,6 +1,6 @@
-%h1 捐款确认
+%h1 捐助确认
 
-%p 捐款金额: ¥#{@donate.amount}
+%p.info 捐助金额:  ¥#{@donate.amount}
 
 - payment_service_for @donate.number, AlipayConfig[:account], :service => :alipay, :html => { :id => 'payment-form', :method => :get } do |service|
   - service.total_fee @donate.amount
@@ -14,4 +14,5 @@
   - service.sign
 
 = button_to_function "确认", "document.getElementById('payment-form').firstChild.remove();document.getElementById('payment-form').submit()"
-
+&nbsp;&nbsp;
+= link_to '返回首页', root_path

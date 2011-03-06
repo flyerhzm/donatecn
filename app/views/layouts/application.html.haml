@@ -6,4 +6,12 @@
     = javascript_include_tag :defaults
     = csrf_meta_tag
   %body
-    = yield
+    #container
+      #header
+        %h1 捐助activemerchant_patch_for_china项目
+      #wrapper
+        - unless flash.blank?
+          #flash
+            - flash.each do |type, message|
+              .message{:class => type}= message
+        #main= yield
