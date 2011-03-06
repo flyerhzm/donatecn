@@ -1,3 +1,4 @@
+# coding: utf-8
 class TransactionsController < ApplicationController
   def notify
     notification = ActiveMerchant::Billing::Integrations::Alipay::Notification.new(request.raw_post)
