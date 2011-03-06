@@ -6,6 +6,7 @@ gem 'rails', '3.0.4'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2', "~> 0.2.6"
+gem 'haml'
 
 gem 'activemerchant', :require => "active_merchant"
 gem 'activemerchant_patch_for_china', '0.1.6'
