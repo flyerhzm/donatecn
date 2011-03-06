@@ -1,5 +1,5 @@
 Donatecn::Application.routes.draw do
-  get "transactions/notify"
+  post "transactions/notify"
   get "transactions/done"
 
   resources :donates

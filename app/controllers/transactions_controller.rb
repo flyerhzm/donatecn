@@ -26,11 +26,12 @@ class TransactionsController < ApplicationController
   end
 
   def done
-    request = ActiveMerchant::Billing::Integrations::Alipay::Return.new(request.query_string)
-    if request.success?
+    r = ActiveMerchant::Billing::Integrations::Alipay::Return.new(request.query_string)
+    if r.success?
       flash[:notice] = '捐助成功！'
     else
       flash[:error] = '捐助失败！'
     end
+    redirect_to root_path
   end
 end
