@@ -15,7 +15,7 @@ class TransactionsController < ApplicationController
       result = transaction.update_attributes(transaction_attributes)
     else
       transaction_attributes.merge!(:notify_id => notification.notify_id)
-      result = Transaction.create(transacation_attributes)
+      result = Transaction.create(transaction_attributes)
     end
 
     if result
