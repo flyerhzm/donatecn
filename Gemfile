@@ -7,6 +7,7 @@ gem 'rails', '3.0.4'
 
 gem 'mysql2', "~> 0.2.6"
 gem 'haml'
+gem 'guid'
 
 gem 'activemerchant', :require => "active_merchant"
 gem 'activemerchant_patch_for_china', '0.1.6'

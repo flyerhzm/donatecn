@@ -1,0 +1,6 @@
+%h1 捐款
+
+- form_for @donate do |f|
+  = f.label :amount, '金额: '
+  = f.text_field :amount
+  = f.submit '捐款'
