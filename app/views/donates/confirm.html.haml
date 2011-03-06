@@ -5,6 +5,7 @@
 - payment_service_for @donate.number, AlipayConfig[:account], :service => :alipay, :html => { :id => 'payment-form', :method => :get } do |service|
   - service.total_fee @donate.amount
   - service.seller :email => AlipayConfig[:email]
+  - service.notify_url url_for(:only_path => false, :controller => 'transactions', :action => 'notify')
   - service.return_url url_for(:only_path => false, :controller => 'transactions', :action => 'done')
   - service.charset "utf-8"
   - service.service ActiveMerchant::Billing::Integrations::Alipay::Helper::CREATE_DIRECT_PAY_BY_USER

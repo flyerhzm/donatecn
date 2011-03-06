@@ -1,9 +1,6 @@
 Donatecn::Application.routes.draw do
   get "transactions/notify"
-
   get "transactions/done"
-
-  get "transactions/show"
 
   resources :donates
   root :to => "donates#index"
