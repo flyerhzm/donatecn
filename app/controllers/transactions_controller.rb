@@ -11,7 +11,7 @@ class TransactionsController < ApplicationController
       :raw_post     => request.raw_post
     }
 
-    if transaction = Transaction.find_by_notify_id(notification_notify_id)
+    if transaction = Transaction.find_by_notify_id(notification.notify_id)
       result = transaction.update_attributes(transaction_attributes)
     else
       transaction_attributes.merge!(:notify_id => notification.notify_id)
