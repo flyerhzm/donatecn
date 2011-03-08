@@ -11,7 +11,7 @@
   %th 捐助人
   %th 捐助金额
   %th 捐助时间
-  - @transactions.each do |transaction|
+  - Transaction.histories.each do |transaction|
     %tr.transaction{:class => cycle("even", "odd")}
       %td.buyer_email= transaction.buyer_email.sub('%40', ' at ').gsub(/\./, ' dot ')
       %td.total_fee= number_to_currency(transaction.total_fee, :unit => '¥')
