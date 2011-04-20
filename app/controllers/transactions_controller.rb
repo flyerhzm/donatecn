@@ -8,6 +8,7 @@ class TransactionsController < ApplicationController
       :trade_status => notification.trade_status,
       :trade_no     => notification.trade_no,
       :notify_time  => notification.notify_time,
+      :buyer_email  => notification.buyer_email,
       :raw_post     => request.raw_post
     }
 
