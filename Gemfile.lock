@@ -50,7 +50,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
-    mysql2 (0.3.7)
+    mysql2 (0.2.13)
     polyglot (0.3.2)
     rack (1.2.4)
     rack-mount (0.6.14)
@@ -88,5 +88,5 @@ DEPENDENCIES
   activemerchant_patch_for_china
   guid
   haml
-  mysql2
+  mysql2 (~> 0.2.13)
   rails (= 3.0.10)
