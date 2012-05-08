@@ -3,7 +3,7 @@ class Donate
   include ActiveModel::Conversion
   extend ActiveModel::Naming
 
-  attr_accessor :amount, :number
+  attr_accessor :amount, :number, :currency
   validates_numericality_of :amount, :greater_than => 0
 
   def initialize(attributes = {})

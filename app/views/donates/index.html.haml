@@ -1,10 +1,18 @@
 %h2 捐助
 
-- form_for @donate do |f|
-  = f.label :amount, '金额: '
+= form_for @alipay_donate do |f|
+  = f.hidden_field :currency
+  = f.label :amount, '支付宝 金额: '
   ¥
   = f.text_field :amount
   = f.submit '捐助'
+
+= form_for @paypal_donate do |f|
+  = f.hidden_field :currency
+  = f.label :amount, 'paypal amount: '
+  $
+  = f.text_field :amount
+  = f.submit 'donate'
 
 %h2 捐助记录
 %table.transactions
