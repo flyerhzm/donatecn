@@ -1,11 +1,21 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.10'
+gem 'rails', "3.2.2"
 
-gem 'mysql2', "~> 0.2.13"
+gem 'mysql2'
 gem 'haml'
 gem 'guid'
 
-gem 'activemerchant', :require => "active_merchant"
-gem 'activemerchant_patch_for_china'
+gem 'payment', :git => "git@github.com:transist/payment.git"
 
+group :assets do
+  gem 'sass-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
+end
+
+gem 'jquery-rails'
+
+group :production do
+  gem 'therubyracer'
+end

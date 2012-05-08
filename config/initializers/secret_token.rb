@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Donatecn::Application.config.secret_token = '24e2e43c2c1f44d5a9b464f35e1fd4bae61c47e42f5112d14500c5f42cfd38718f7aa48cefc95dccf711be4b34a5331aa9a6b8b681cb7189e3f74b783ea5c90c'
+Donatecn::Application.config.secret_token = '7669a6ae794221df041d6c451f4407a4ad44b6bb43a132b9df2a4e447851f515a6c8134c32c62a5f856021d2126565322f4c7d7c396d0267f17433f582fc9ff9'
