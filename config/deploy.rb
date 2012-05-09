@@ -25,6 +25,7 @@ namespace :config do
   task :init do
     run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
     run "ln -nfs #{shared_path}/config/alipay.yml #{release_path}/config/alipay.yml"
+    run "ln -nfs #{shared_path}/config/payment.yml #{release_path}/config/payment.yml"
   end
 end
 
