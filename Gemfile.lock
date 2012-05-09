@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:transist/payment.git
-  revision: 4a6c79c13197a3e633890cc2c90070cda3113703
+  revision: 39b3a8a03756a3676381fb4aa61be94df8263fe5
   specs:
     payment (0.0.1)
       activemerchant
