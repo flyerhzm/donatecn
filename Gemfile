@@ -6,7 +6,7 @@ gem 'mysql2'
 gem 'haml'
 gem 'guid'
 
-gem 'payment', :git => "git@github.com:transist/payment.git"
+gem 'pay_fu', :git => "git@github.com:transist/pay_fu.git"
 
 group :assets do
   gem 'sass-rails'

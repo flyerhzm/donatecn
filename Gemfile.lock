@@ -1,8 +1,8 @@
 GIT
-  remote: git@github.com:transist/payment.git
-  revision: 3b9b7bd81719b29ee2d92f0e235a44d20dcb9c10
+  remote: git@github.com:transist/pay_fu.git
+  revision: f678b0d0e3e54576a51309c1ee11532b026f3b7d
   specs:
-    payment (0.0.1)
+    pay_fu (0.0.1)
       activemerchant
       activemerchant_patch_for_china
       rails
@@ -136,7 +136,7 @@ DEPENDENCIES
   haml
   jquery-rails
   mysql2
-  payment!
+  pay_fu!
   rails (= 3.2.2)
   sass-rails
   therubyracer
