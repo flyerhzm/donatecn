@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120508121803) do
+ActiveRecord::Schema.define(:version => 20120514124833) do
+
+  create_table "pay_fu_transactions", :force => true do |t|
+    t.string   "type"
+    t.string   "transaction_id"
+    t.string   "transaction_type"
+    t.string   "payment_status"
+    t.datetime "payment_date"
+    t.integer  "gross"
+    t.string   "raw_post"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
 
   create_table "payment_transactions", :force => true do |t|
     t.string   "type"
