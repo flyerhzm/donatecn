@@ -1,10 +1,11 @@
 Donatecn::Application.routes.draw do
+  mount PayFu::Engine => '/pay_fu', :as => 'pay_fu'
+
   post "transactions/notify"
   get "transactions/done"
 
   resources :donates
   root :to => "donates#index"
-  mount Payment::Engine => '/payment', :as => 'payment'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

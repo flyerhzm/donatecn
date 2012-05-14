@@ -1,6 +1,6 @@
 class DonatesController < ApplicationController
-  include Payment::PaypalHelper
-  include Payment::AlipayHelper
+  include PayFu::PaypalHelper
+  include PayFu::AlipayHelper
 
   def index
     @alipay_donate = Donate.new(:currency => 'rmb')
@@ -16,7 +16,7 @@ class DonatesController < ApplicationController
         redirect_to_paypal_gateway(:item_name => "donatecn", :amount => @donate.amount)
         return
       when "rmb"
-        redirect_to_alipay_gateway(:subject => "donatecn", :body => "donatecn", :amount => @donate.amount, :out_trade_no => "123", :notify_url => payment.alipay_transactions_notify_url)
+        redirect_to_alipay_gateway(:subject => "donatecn", :body => "donatecn", :amount => @donate.amount, :out_trade_no => "123", :notify_url => pay_fu.alipay_transactions_notify_url)
       end
     else
       render :index
