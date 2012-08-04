@@ -131,6 +131,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activemerchant
+  activemerchant_patch_for_china
   coffee-rails
   guid
   haml

@@ -6,6 +6,8 @@ gem 'mysql2'
 gem 'haml'
 gem 'guid'
 
+gem 'activemerchant'
+gem 'activemerchant_patch_for_china'
 gem 'pay_fu', :git => "git@github.com:transist/pay_fu.git"
 
 group :assets do
